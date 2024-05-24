@@ -1,0 +1,44 @@
+@import "../../../../../../../../components//GlobalStyles/GlobalStyles.scss";
+
+$border-width: 1px;
+
+.tr {
+   border-bottom: $border-width solid $thirty-eighth-color;
+}
+
+.th,
+.td {
+   border-right: $border-width solid $thirty-eighth-color;
+}
+
+@media (max-width: 1400px) {
+   .wrapper {
+      .hide-1400 {
+         display: none;
+      }
+   }
+}
+
+@media (max-width: 990px) {
+   .wrapper {
+      .hide-990 {
+         display: none;
+      }
+   }
+}
+
+@media (max-width: 767px) {
+   .wrapper {
+      .hide-767 {
+         display: none;
+      }
+
+      .show-767 {
+         display: block;
+      }
+
+      .to-money {
+         min-width: 200px;
+      }
+   }
+}

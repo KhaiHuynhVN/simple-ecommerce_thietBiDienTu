@@ -1,0 +1,50 @@
+{
+  "groups": [
+    {
+      "name": "application",
+      "type": "com.dustincode.ecommerce.core.configs.ApplicationProperties",
+      "sourceType": "com.dustincode.ecommerce.core.configs.ApplicationProperties"
+    },
+    {
+      "name": "application.security",
+      "type": "com.dustincode.ecommerce.core.configs.ApplicationProperties$SecurityProperties",
+      "sourceType": "com.dustincode.ecommerce.core.configs.ApplicationProperties",
+      "sourceMethod": "public com.dustincode.ecommerce.core.configs.ApplicationProperties.SecurityProperties getSecurity() "
+    },
+    {
+      "name": "application.security.jwt",
+      "type": "com.dustincode.ecommerce.core.configs.ApplicationProperties$JwtProperties",
+      "sourceType": "com.dustincode.ecommerce.core.configs.ApplicationProperties$SecurityProperties",
+      "sourceMethod": "public com.dustincode.ecommerce.core.configs.ApplicationProperties.JwtProperties jwt() "
+    },
+    {
+      "name": "application.security.mfa",
+      "type": "com.dustincode.ecommerce.core.configs.ApplicationProperties$MFAProperties",
+      "sourceType": "com.dustincode.ecommerce.core.configs.ApplicationProperties$SecurityProperties",
+      "sourceMethod": "public com.dustincode.ecommerce.core.configs.ApplicationProperties.MFAProperties mfa() "
+    }
+  ],
+  "properties": [
+    {
+      "name": "application.base-portal-url",
+      "type": "java.lang.String",
+      "sourceType": "com.dustincode.ecommerce.core.configs.ApplicationProperties"
+    },
+    {
+      "name": "application.cors",
+      "type": "org.springframework.web.cors.CorsConfiguration",
+      "sourceType": "com.dustincode.ecommerce.core.configs.ApplicationProperties"
+    },
+    {
+      "name": "application.security.jwt.secret",
+      "type": "java.lang.String",
+      "sourceType": "com.dustincode.ecommerce.core.configs.ApplicationProperties$JwtProperties"
+    },
+    {
+      "name": "application.security.mfa.issuer",
+      "type": "java.lang.String",
+      "sourceType": "com.dustincode.ecommerce.core.configs.ApplicationProperties$MFAProperties"
+    }
+  ],
+  "hints": []
+}
